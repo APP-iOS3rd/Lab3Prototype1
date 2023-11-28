@@ -32,9 +32,9 @@ struct HomeView: View {
                         Spacer()
                         
                         NavigationLink(destination: WalkDataView()) {
-                            Image(systemName: "chart.bar.xaxis")
-                                .font(.largeTitle)
-                                .foregroundStyle(.gray)
+                                Image(systemName: "chart.bar.xaxis")
+                                    .font(.largeTitle)
+                                    .foregroundStyle(.gray)
                         }
                         
                         NavigationLink(destination: ShopView()) {
