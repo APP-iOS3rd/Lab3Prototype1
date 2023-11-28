@@ -1,5 +1,9 @@
 # Lab3Prototype1
-Lab3 프로로타입 실습 1
+
+김강혁 | 김재승 | 양주원 | 정은수
+
+<img width="325" alt="스크린샷 2023-11-28 오후 4 01 17" src="https://github.com/APP-iOS3rd/Lab3Prototype1/assets/141672096/ff3a93ec-9666-44d2-a973-3d1f7cd64ac2">
+<img width="325" alt="스크린샷 2023-11-28 오후 4 01 22" src="https://github.com/APP-iOS3rd/Lab3Prototype1/assets/141672096/6edfb04f-95d3-4a8e-8b61-5cd711d6c347">
 
 # 프로토타입 써보기
 https://martdealer.notion.site/1127-a8fdfe4984b54d7193e41851b5e3e5e6?pvs=4
