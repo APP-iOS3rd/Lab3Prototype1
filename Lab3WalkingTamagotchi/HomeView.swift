@@ -59,34 +59,27 @@ struct HomeView: View {
                             .clipShape(RoundedRectangle(cornerRadius: 8))
                         
                         VStack {
+                            Spacer()
+                            HStack {
+                                Text("LV. 10")
+                                    .fontWeight(.bold)
+                                
+                                Text("용용이")
+                                    .fontWeight(.bold)
+                            }
+                            .padding(.bottom, 2)
+                            
                             Image("baby")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                                .frame(height: 300)
-                                .padding(.bottom, 10)
-                            
-                            ZStack {
-                                Color.white
-                                    .frame(width: 200, height: 120)
-                                    .clipShape(RoundedRectangle(cornerRadius: 8))
-                                
-                                VStack(alignment: .leading) {
-                                    Text("LV. 10")
-                                        .fontWeight(.bold)
-                                        .padding(.bottom, 2)
-                                        .frame(width: 200, alignment: .leading)
-                                    
-                                    Text("상태")
-                                        .font(.system(size: 20, weight: .bold))
-                                    
-                                    Text("아주 배고픔")
-                                    
-                                    Text("건강")
-                                }
-                                .padding(.leading, 20)
-                            } //ZStack
-                            .padding(.vertical, 20)
+                                .frame(height: 150)
+                                .padding(.bottom, 50)
+
+                            Text("상태: 배고픔")
+                                .fontWeight(.bold)
+                                .padding(.bottom, 2)
                         } //VStack
+                        .padding(.vertical, 50)
                     } //ZStack
                     
                     HStack(spacing: 14) {

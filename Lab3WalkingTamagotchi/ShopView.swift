@@ -22,37 +22,39 @@ struct ShopView: View {
             ZStack {
                 Image("room")
                     .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: 270, height: 300)
+                    .frame(width: 250, height: 280)
                     .clipShape(RoundedRectangle(cornerRadius: 8))
+                    .aspectRatio(contentMode: .fit)
                 
                 Image("baby")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 200)
-            }
-            .padding(.vertical)
+                    .frame(width: 130, height: 130)
+            } //Zstack: Monster Images
+            .padding(.top, 30)
+            .padding(.bottom, 20)
             
-            VStack(spacing: 0) {
-                ZStack {
-                    VStack(spacing: 0) {
-                        Spacer()
-                        
-                        HStack(spacing: 0) {
-                            Color.yellow
-                                .frame(width: 80, height: 30)
-                            
-                            Color.newGray
-                                .frame(width: 80, height: 30)
-                            
-                            Color.newGray
-                                .frame(width: 80, height: 30)
-                            
-                            Spacer()
-                        }
-                        .padding(.leading, 13)
-                    }
+            ZStack {
+                VStack(spacing: 0) {
+                    Spacer()
                     
+                    HStack(spacing: 0) {
+                        hatButtonColor
+                            .frame(width: 80, height: 30)
+                        
+                        bagButtonColor
+                            .frame(width: 80, height: 30)
+                        
+                        earRingButtonColor
+                            .frame(width: 80, height: 30)
+                        
+                        Spacer()
+                    }
+                    .padding(.leading, 13)
+                } //VStack: Button Background
+                
+                VStack(spacing: 0) {
+                    Spacer()
                     HStack(spacing: 0) {
                         Button {
                             gridArray = hats
@@ -63,7 +65,7 @@ struct ShopView: View {
                             Text("모자")
                                 .frame(width: 80, height: 40)
                                 .background(hatButtonColor)
-                                .clipShape(RoundedRectangle(cornerRadius: 10))
+                                .clipShape(RoundedRectangle(cornerRadius: 20))
                                 .foregroundStyle(.black)
                         }
                         
@@ -76,7 +78,7 @@ struct ShopView: View {
                             Text("가방")
                                 .frame(width: 80, height: 40)
                                 .background(bagButtonColor)
-                                .clipShape(RoundedRectangle(cornerRadius: 10))
+                                .clipShape(RoundedRectangle(cornerRadius: 20))
                                 .foregroundStyle(.black)
                         }
                         
@@ -89,15 +91,16 @@ struct ShopView: View {
                             Text("귀걸이")
                                 .frame(width: 80, height: 40)
                                 .background(earRingButtonColor)
-                                .clipShape(RoundedRectangle(cornerRadius: 10))
+                                .clipShape(RoundedRectangle(cornerRadius: 20))
                                 .foregroundStyle(.black)
                         }
                         
                         Spacer()
                     } //HStack: Buttons
                     .padding(.leading, 13)
-                }
-            } //VStack
+                    Spacer().frame(height: 14)
+                } //VStack: To make button alignment to bottom
+            } //ZStack: Item tab
             
             ZStack {
                 HStack(alignment: .top) {
@@ -109,14 +112,14 @@ struct ShopView: View {
                     }
                     
                     Spacer()
-                }
+                } //HStack: For GridViewBackground
                 
                 Color.newYellow
                     .clipShape(RoundedRectangle(cornerRadius: 8))
                 
                 VStack {
                     LazyVGrid(columns: Array(repeating: GridItem(), count: 4)) {
-                        ForEach((0...11), id: \.self) { index in
+                        ForEach((0...7), id: \.self) { index in
                             if index < gridArray.count {
                                 Image(systemName: gridArray[index])
                                     .font(.system(size: 35))
@@ -139,6 +142,7 @@ struct ShopView: View {
                         
                         HStack {
                             Image(systemName: "p.circle.fill")
+                            
                             Text("\(HomeView().myPoint)")
                                 .fontWeight(.bold)
                         }
@@ -146,20 +150,21 @@ struct ShopView: View {
                         .background(.newDarkGray)
                         .clipShape(RoundedRectangle(cornerRadius: 8))
                         .foregroundStyle(.white)
-                    }
-                    .padding(.trailing, 30)
+                    } //HStack: Point with trailingAlignent
+                    .padding(.trailing, 20)
+                    
                     Spacer()
-                } //VStack
+                } //VStack: GridItem & Point
             } //ZStack
-            .frame(height: 300)
+            .frame(height: 200)
             .padding(.horizontal, 13)
-            .padding(.bottom, 20)
+            .padding(.bottom, 30)
             
             HStack {
                 Button {
                     
                 } label: {
-                    Text("저장")
+                    Text("착용")
                         .frame(width: 80, height: 50)
                         .background(.yellow)
                         .clipShape(RoundedRectangle(cornerRadius: 8))
@@ -175,10 +180,10 @@ struct ShopView: View {
                         .clipShape(RoundedRectangle(cornerRadius: 8))
                         .foregroundStyle(.black)
                 }
-            }
+            } //HStack: Save & Buy Button
             
             Spacer()
-        } //VStack
+        } //VStack: Entire View
         .onAppear(perform: {
             gridArray = hats
         })
