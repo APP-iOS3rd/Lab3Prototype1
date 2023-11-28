@@ -31,14 +31,23 @@ struct HomeView: View {
                         .font(.system(size: 20))
                         Spacer()
                         
-                        Image(systemName: "chart.bar.xaxis")
-                            .font(.largeTitle)
+                        NavigationLink(destination: WalkDataView()) {
+                            Image(systemName: "chart.bar.xaxis")
+                                .font(.largeTitle)
+                                .foregroundStyle(.black)
+                        }
                         
-                        Image(systemName: "cart")
-                            .font(.largeTitle)
+                        NavigationLink(destination: ShopView()) {
+                            Image(systemName: "cart")
+                                .font(.largeTitle)
+                                .foregroundStyle(.black)
+                        }
                         
-                        Image(systemName: "gearshape")
-                            .font(.largeTitle)
+                        NavigationLink(destination: SettingView()) {
+                            Image(systemName: "gearshape")
+                                .font(.largeTitle)
+                                .foregroundStyle(.black)
+                        }
                         
                     } //HStack
                     .padding(.bottom, 10)
