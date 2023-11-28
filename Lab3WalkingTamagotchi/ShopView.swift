@@ -33,26 +33,27 @@ struct ShopView: View {
             }
             .padding(.vertical)
             
-            VStack(spacing: 0) {
-                ZStack {
-                    VStack(spacing: 0) {
-                        Spacer()
-                        
-                        HStack(spacing: 0) {
-                            Color.yellow
-                                .frame(width: 80, height: 30)
-                            
-                            Color.newGray
-                                .frame(width: 80, height: 30)
-                            
-                            Color.newGray
-                                .frame(width: 80, height: 30)
-                            
-                            Spacer()
-                        }
-                        .padding(.leading, 13)
-                    }
+            ZStack {
+                VStack(spacing: 0) {
+                    Spacer()
                     
+                    HStack(spacing: 0) {
+                        hatButtonColor
+                            .frame(width: 80, height: 30)
+                        
+                        bagButtonColor
+                            .frame(width: 80, height: 30)
+                        
+                        earRingButtonColor
+                            .frame(width: 80, height: 30)
+                        
+                        Spacer()
+                    }
+                    .padding(.leading, 13)
+                } //VStack: Button Background
+                
+                VStack(spacing: 0) {
+                    Spacer()
                     HStack(spacing: 0) {
                         Button {
                             gridArray = hats
@@ -63,7 +64,7 @@ struct ShopView: View {
                             Text("모자")
                                 .frame(width: 80, height: 40)
                                 .background(hatButtonColor)
-                                .clipShape(RoundedRectangle(cornerRadius: 10))
+                                .clipShape(RoundedRectangle(cornerRadius: 20))
                                 .foregroundStyle(.black)
                         }
                         
@@ -76,7 +77,7 @@ struct ShopView: View {
                             Text("가방")
                                 .frame(width: 80, height: 40)
                                 .background(bagButtonColor)
-                                .clipShape(RoundedRectangle(cornerRadius: 10))
+                                .clipShape(RoundedRectangle(cornerRadius: 20))
                                 .foregroundStyle(.black)
                         }
                         
@@ -89,15 +90,16 @@ struct ShopView: View {
                             Text("귀걸이")
                                 .frame(width: 80, height: 40)
                                 .background(earRingButtonColor)
-                                .clipShape(RoundedRectangle(cornerRadius: 10))
+                                .clipShape(RoundedRectangle(cornerRadius: 20))
                                 .foregroundStyle(.black)
                         }
                         
                         Spacer()
                     } //HStack: Buttons
                     .padding(.leading, 13)
-                }
-            } //VStack
+                    Spacer().frame(height: 14)
+                } //VStack: To make button alignment to bottom
+            } //ZStack: Item tab
             
             ZStack {
                 HStack(alignment: .top) {
