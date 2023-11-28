@@ -56,7 +56,7 @@ struct SettingView: View {
                 
                 Spacer()
             }
-            .padding(30)
+            .padding()
         }
     }
 }
