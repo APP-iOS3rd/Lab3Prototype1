@@ -143,7 +143,7 @@ struct ShopView: View {
                                 .fontWeight(.bold)
                         }
                         .frame(width: 120, height: 35)
-                        .background(.darkGray)
+                        .background(.newDarkGray)
                         .clipShape(RoundedRectangle(cornerRadius: 8))
                         .foregroundStyle(.white)
                     }
@@ -179,11 +179,10 @@ struct ShopView: View {
             
             Spacer()
         } //VStack
+        .onAppear(perform: {
+            gridArray = hats
+        })
     }
-}
-
-enum ShopItem {
-    case hats, bags, earRings
 }
 
 #Preview {
