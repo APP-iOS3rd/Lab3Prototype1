@@ -30,8 +30,8 @@ struct ShopView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 130)
-            }
-            .padding(.vertical)
+            } //Zstack: Monster Images
+            .padding(.vertical, 30)
             
             ZStack {
                 VStack(spacing: 0) {
@@ -111,7 +111,7 @@ struct ShopView: View {
                     }
                     
                     Spacer()
-                }
+                } //HStack: For GridViewBackground
                 
                 Color.newYellow
                     .clipShape(RoundedRectangle(cornerRadius: 8))
@@ -141,6 +141,7 @@ struct ShopView: View {
                         
                         HStack {
                             Image(systemName: "p.circle.fill")
+                            
                             Text("\(HomeView().myPoint)")
                                 .fontWeight(.bold)
                         }
@@ -148,10 +149,10 @@ struct ShopView: View {
                         .background(.newDarkGray)
                         .clipShape(RoundedRectangle(cornerRadius: 8))
                         .foregroundStyle(.white)
-                    }
+                    } //HStack: Point with trailingAlignent
                     .padding(.trailing, 30)
                     Spacer()
-                } //VStack
+                } //VStack: GridItem & Point
             } //ZStack
             .frame(height: 200)
             .padding(.horizontal, 13)
@@ -161,7 +162,7 @@ struct ShopView: View {
                 Button {
                     
                 } label: {
-                    Text("저장")
+                    Text("착용")
                         .frame(width: 80, height: 50)
                         .background(.yellow)
                         .clipShape(RoundedRectangle(cornerRadius: 8))
@@ -177,10 +178,10 @@ struct ShopView: View {
                         .clipShape(RoundedRectangle(cornerRadius: 8))
                         .foregroundStyle(.black)
                 }
-            }
+            } //HStack: Save & Buy Button
             
             Spacer()
-        } //VStack
+        } //VStack: Entire View
         .onAppear(perform: {
             gridArray = hats
         })
