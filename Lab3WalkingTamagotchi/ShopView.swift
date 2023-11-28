@@ -22,16 +22,17 @@ struct ShopView: View {
             ZStack {
                 Image("room")
                     .resizable()
-                    .aspectRatio(contentMode: .fill)
                     .frame(width: 250, height: 280)
                     .clipShape(RoundedRectangle(cornerRadius: 8))
+                    .aspectRatio(contentMode: .fit)
                 
                 Image("baby")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 130)
+                    .frame(width: 130, height: 130)
             } //Zstack: Monster Images
-            .padding(.vertical, 30)
+            .padding(.top, 30)
+            .padding(.bottom, 20)
             
             ZStack {
                 VStack(spacing: 0) {
@@ -150,13 +151,14 @@ struct ShopView: View {
                         .clipShape(RoundedRectangle(cornerRadius: 8))
                         .foregroundStyle(.white)
                     } //HStack: Point with trailingAlignent
-                    .padding(.trailing, 30)
+                    .padding(.trailing, 20)
+                    
                     Spacer()
                 } //VStack: GridItem & Point
             } //ZStack
             .frame(height: 200)
             .padding(.horizontal, 13)
-            .padding(.bottom, 20)
+            .padding(.bottom, 30)
             
             HStack {
                 Button {
