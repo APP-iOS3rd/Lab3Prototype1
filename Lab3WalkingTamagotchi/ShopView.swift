@@ -23,13 +23,13 @@ struct ShopView: View {
                 Image("room")
                     .resizable()
                     .aspectRatio(contentMode: .fill)
-                    .frame(width: 270, height: 300)
+                    .frame(width: 250, height: 280)
                     .clipShape(RoundedRectangle(cornerRadius: 8))
                 
                 Image("baby")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 200)
+                    .frame(width: 130)
             }
             .padding(.vertical)
             
