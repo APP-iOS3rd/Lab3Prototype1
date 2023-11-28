@@ -179,6 +179,9 @@ struct ShopView: View {
             
             Spacer()
         } //VStack
+        .onAppear(perform: {
+            gridArray = hats
+        })
     }
 }
 
