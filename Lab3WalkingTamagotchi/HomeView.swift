@@ -13,7 +13,6 @@ struct HomeView: View {
     @State var medicinePrice: Int = 100
     
     var body: some View {
-        VStack {
             NavigationView {
                 VStack {
                     HStack {
@@ -54,7 +53,9 @@ struct HomeView: View {
                     
                     ZStack {
                         Image("room")
+                            .resizable()
                             .frame(width: 350, height: 500)
+                            .aspectRatio(contentMode: .fit)
                             .clipShape(RoundedRectangle(cornerRadius: 8))
                         
                         VStack {
@@ -130,7 +131,6 @@ struct HomeView: View {
                     Spacer()
                 } //VStack
             } //NavigationView
-        } //VStack
         .padding()
     }
 }
