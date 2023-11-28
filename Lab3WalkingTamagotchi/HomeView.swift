@@ -34,33 +34,35 @@ struct HomeView: View {
                         NavigationLink(destination: WalkDataView()) {
                             Image(systemName: "chart.bar.xaxis")
                                 .font(.largeTitle)
-                                .foregroundStyle(.black)
+                                .foregroundStyle(.gray)
                         }
                         
                         NavigationLink(destination: ShopView()) {
                             Image(systemName: "cart")
                                 .font(.largeTitle)
-                                .foregroundStyle(.black)
+                                .foregroundStyle(.gray)
                         }
                         
                         NavigationLink(destination: SettingView()) {
                             Image(systemName: "gearshape")
                                 .font(.largeTitle)
-                                .foregroundStyle(.black)
+                                .foregroundStyle(.gray)
                         }
                         
                     } //HStack
                     .padding(.bottom, 10)
                     
                     ZStack {
-                        Color.gray
+                        Image("room")
                             .frame(width: 350, height: 500)
                             .clipShape(RoundedRectangle(cornerRadius: 8))
                         
                         VStack {
-                            Image(systemName: "teddybear")
-                                .font(.system(size: 150))
-                                .padding(.bottom, 50)
+                            Image("baby")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(height: 300)
+                                .padding(.bottom, 10)
                             
                             ZStack {
                                 Color.white
@@ -82,6 +84,7 @@ struct HomeView: View {
                                 }
                                 .padding(.leading, 20)
                             } //ZStack
+                            .padding(.vertical, 20)
                         } //VStack
                     } //ZStack
                     
@@ -90,7 +93,7 @@ struct HomeView: View {
                             myPoint -= foodPrice
                         } label: {
                             VStack {
-                                Text("밥 주기")
+                                Text("약 주기")
                                     .font(.system(size: 20, weight: .bold))
                                     .padding(.bottom, 5)
                                 
@@ -101,7 +104,7 @@ struct HomeView: View {
                             }
                             .foregroundStyle(.black)
                             .frame(width: 167, height: 100)
-                            .background(.yellow)
+                            .background(.newGray)
                             .clipShape(RoundedRectangle(cornerRadius: 8))
                         }
                         
@@ -109,7 +112,7 @@ struct HomeView: View {
                             myPoint -= medicinePrice
                         } label: {
                             VStack {
-                                Text("약 주기")
+                                Text("밥 주기")
                                     .font(.system(size: 20, weight: .bold))
                                     .padding(.bottom, 5)
                                 
@@ -120,7 +123,7 @@ struct HomeView: View {
                             }
                             .foregroundStyle(.black)
                             .frame(width: 167, height: 100)
-                            .background(.yellow)
+                            .background(.newYellow)
                             .clipShape(RoundedRectangle(cornerRadius: 8))
                         }
                     }
