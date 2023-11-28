@@ -116,7 +116,7 @@ struct ShopView: View {
                 
                 VStack {
                     LazyVGrid(columns: Array(repeating: GridItem(), count: 4)) {
-                        ForEach((0...11), id: \.self) { index in
+                        ForEach((0...7), id: \.self) { index in
                             if index < gridArray.count {
                                 Image(systemName: gridArray[index])
                                     .font(.system(size: 35))
@@ -151,7 +151,7 @@ struct ShopView: View {
                     Spacer()
                 } //VStack
             } //ZStack
-            .frame(height: 300)
+            .frame(height: 200)
             .padding(.horizontal, 13)
             .padding(.bottom, 20)
             
