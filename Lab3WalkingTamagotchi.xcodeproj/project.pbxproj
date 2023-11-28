@@ -21,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		9EA8714E2B157124007468AE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9EA871502B15B37E007468AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		9EC9328D2B156C3D00B636A7 /* Lab3WalkingTamagotchi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lab3WalkingTamagotchi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EC932902B156C3D00B636A7 /* Lab3WalkingTamagotchiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab3WalkingTamagotchiApp.swift; sourceTree = "<group>"; };
 		9EC932922B156C3D00B636A7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -72,6 +73,7 @@
 				9EC932A22B156C9900B636A7 /* WalkDataView.swift */,
 				9EC932A42B156C9D00B636A7 /* SettingView.swift */,
 				9EC932942B156C3F00B636A7 /* Assets.xcassets */,
+				9EA871502B15B37E007468AE /* Info.plist */,
 				9EC932962B156C3F00B636A7 /* Preview Content */,
 			);
 			path = Lab3WalkingTamagotchi;
@@ -299,9 +301,9 @@
 				DEVELOPMENT_TEAM = 5N8534A952;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Lab3WalkingTamagotchi/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -329,9 +331,9 @@
 				DEVELOPMENT_TEAM = 5N8534A952;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Lab3WalkingTamagotchi/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
