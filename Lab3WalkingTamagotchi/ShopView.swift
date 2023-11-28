@@ -185,10 +185,6 @@ struct ShopView: View {
     }
 }
 
-enum ShopItem {
-    case hats, bags, earRings
-}
-
 #Preview {
     ShopView()
 }
