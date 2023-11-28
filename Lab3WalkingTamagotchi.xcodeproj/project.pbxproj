@@ -16,7 +16,6 @@
 		9EC932A12B156C8E00B636A7 /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC932A02B156C8E00B636A7 /* ShopView.swift */; };
 		9EC932A32B156C9900B636A7 /* WalkDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC932A22B156C9900B636A7 /* WalkDataView.swift */; };
 		9EC932A52B156C9D00B636A7 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC932A42B156C9D00B636A7 /* SettingView.swift */; };
-		9EC932A72B156DC400B636A7 /* HealthDataAccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC932A62B156DC400B636A7 /* HealthDataAccessView.swift */; };
 		9EC932A92B156F9300B636A7 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 9EC932A82B156F9300B636A7 /* .gitignore */; };
 /* End PBXBuildFile section */
 
@@ -31,7 +30,6 @@
 		9EC932A02B156C8E00B636A7 /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
 		9EC932A22B156C9900B636A7 /* WalkDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkDataView.swift; sourceTree = "<group>"; };
 		9EC932A42B156C9D00B636A7 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
-		9EC932A62B156DC400B636A7 /* HealthDataAccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataAccessView.swift; sourceTree = "<group>"; };
 		9EC932A82B156F9300B636A7 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,7 +71,6 @@
 				9EC932A02B156C8E00B636A7 /* ShopView.swift */,
 				9EC932A22B156C9900B636A7 /* WalkDataView.swift */,
 				9EC932A42B156C9D00B636A7 /* SettingView.swift */,
-				9EC932A62B156DC400B636A7 /* HealthDataAccessView.swift */,
 				9EC932942B156C3F00B636A7 /* Assets.xcassets */,
 				9EC932962B156C3F00B636A7 /* Preview Content */,
 			);
@@ -164,7 +161,6 @@
 				9EC932932B156C3D00B636A7 /* HomeView.swift in Sources */,
 				9EC932912B156C3D00B636A7 /* Lab3WalkingTamagotchiApp.swift in Sources */,
 				9EC932A52B156C9D00B636A7 /* SettingView.swift in Sources */,
-				9EC932A72B156DC400B636A7 /* HealthDataAccessView.swift in Sources */,
 				9EC932A12B156C8E00B636A7 /* ShopView.swift in Sources */,
 				9EC9329F2B156C7A00B636A7 /* LoadingView.swift in Sources */,
 			);
