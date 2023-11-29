@@ -123,12 +123,12 @@ struct ShopView: View {
                             if index < gridArray.count {
                                 Image(systemName: gridArray[index])
                                     .font(.system(size: 35))
-                                    .frame(minWidth: 75, minHeight: 80)
+                                    .frame(minWidth: 65, minHeight: 65)
                                     .background(.white)
                                     .cornerRadius(8)
                             } else {
                                 Color.white
-                                    .frame(minWidth: 75, minHeight: 80)
+                                    .frame(minWidth: 65, minHeight: 65)
                                     .cornerRadius(8)
                             }
                         }
