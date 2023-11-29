@@ -20,14 +20,14 @@ struct SettingView: View {
                     .font(.system(size: 45))
                     .fontWeight(.heavy)
                 
-                HStack {
-                    Toggle(isOn: $healthAccess) {
-                        Text("건강 앱 접근 권한")
-                            .fontWeight(.bold)
-                    }
-                }
-                .padding(.vertical, 5)
-                Divider()
+//                HStack {
+//                    Toggle(isOn: $healthAccess) {
+//                        Text("건강 앱 접근 권한")
+//                            .fontWeight(.bold)
+//                    }
+//                }
+//                .padding(.vertical, 5)
+//                Divider()
                 
                 HStack {
                     Toggle(isOn: $soundOff) {
