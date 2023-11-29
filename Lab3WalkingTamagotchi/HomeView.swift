@@ -37,13 +37,13 @@ struct HomeView: View {
                         }
                         
                         NavigationLink(destination: ShopView()) {
-                            Image(systemName: "cart")
+                            Image(systemName: "cart.fill")
                                 .font(.largeTitle)
                                 .foregroundStyle(.gray)
                         }
                         
                         NavigationLink(destination: SettingView()) {
-                            Image(systemName: "gearshape")
+                            Image(systemName: "gearshape.fill")
                                 .font(.largeTitle)
                                 .foregroundStyle(.gray)
                         }
